@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adidas.css">
+    <title>Adidas Store</title>
+</head>
+<body>
+   <header>
+    <div class="logo">ADIDAS
+    </div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#cart">Корзина</a>
+        <a href="#registration">Регистрация</a>
+    </nav>
+   </header>
+
+   <section id="home" class="hero">
+    <div>
+        <h1>Добро пожаловать в ADIDAS STORE</h1>
+        <p>
+            Спортивная одежда, кроссовки и стильные вещи для всей семьи
+        </p>
+        <button onclick="showProducts()">
+            смотереть товары
+        </button>
+    </div>
+   </section>
+
+   
+ <section class="categories">
+    <h2>Категории</h2>
+    <div class="=category-buttons">
+        <button onclick="filterProducts (`women`)">Для жещин</button>
+        <button onclick="filterProducts (`men`)">Для мужчин</button>
+        <button onclick="filterProducts (`kids`)">Для детей</button>
+        <button onclick="filterProducts (`shoes`)">Кроссовки</button>
+        <button onclick="filterProducts (`all product`)">все товары</button>
+    </div>
+ </section>
+
+ <section class="products" id="products">
+    <h2>Наши товары</h2>
+    <div class="product-container">
+        <div class="product women">
+            <img src="фото адидас женский.jpg" alt="Женская одежда адидас">
+            <h3>Adidas спортивный костюм</h3>
+            <p>Для женщин</p>
+            <strong>4500 сом</strong>
+            <button onclick="addToCard (`Adidas спортивный костюм`, 4500)">
+                Купить
+            </button>
+        </div>
+            <!-- Мужская одежда -->
+            <div class="product men">
+
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=600&q=80">
+
+                <h3>Adidas футболка</h3>
+
+                <p>Для мужчин</p>
+
+                <strong>2500 сом</strong>
+
+                <button onclick="addToCart('Adidas футболка', 2500)">
+                    Купить
+                </button>
+
+            </div>
+
+
+            <!-- Детская одежда -->
+            <div class="product kids">
+
+                <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=600&q=80">
+
+                <h3>Adidas детский комплект</h3>
+
+                <p>Для детей</p>
+
+                <strong>3200 сом</strong>
+
+                <button onclick="addToCart('Adidas детский комплект', 3200)">
+                    Купить
+                </button>
+
+            </div>
+
+
+            <!-- Кроссовки -->
+            <div class="product shoes">
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80">
+
+                <h3>Adidas Sneakers</h3>
+
+                <p>Кроссовки</p>
+
+                <strong>6500 сом</strong>
+
+                <button onclick="addToCart('Adidas Sneakers', 6500)">
+                    Купить
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- О нас -->
+    <section id="about" class="about">
+
+        <h2>О нас</h2>
+
+        <p>
+            Наш магазин Adidas был основан 29 сентября 2026 года.
+        </p>
+
+        <p>
+            Мы предлагаем спортивную одежду, кроссовки
+            и аксессуары для женщин, мужчин и детей.
+            Наша цель — помочь клиентам выбрать удобные
+            и стильные товары для спорта и повседневной жизни.
+        </p>
+
+    </section>
+
+
+    <!-- Корзина -->
+    <section id="cart" class="cart">
+
+        <h2>🛒 Ваша корзина</h2>
+
+        <div id="cartItems">
+            <p>Корзина пока пустая.</p>
+        </div>
+
+        <h3 id="total">
+            Итого: 0 сом
+        </h3>
+
+    </section>
+
+
+    <!-- Регистрация -->
+    <section id="registration" class="registration">
+
+        <h2>Регистрация клиента</h2>
+
+        <form onsubmit="register(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="ФИО"
+                required
+            >
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Место жительства"
+                required
+            >
+
+            <button type="submit">
+                Зарегистрироваться
+            </button>
+
+        </form>
+
+        <p id="registrationMessage"></p>
+
+    </section>
+
+
+    <!-- Подвал -->
+    <footer>
+
+        <p>© 2026 Adidas Store</p>
+
+        <p>Sport • Style • Comfort</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+    </div>
+ </section>
+</body>
+</html> 
